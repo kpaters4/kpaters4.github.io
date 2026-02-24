@@ -4,7 +4,7 @@
 I'm a Data Science student at UNC Charlotte with a strong interest in artificial intelligence, machine learning, and business intelligence. I enjoy working with data to uncover patterns and translate information into actions. Through these projects I am refining my skills and working on launching my career even further. 
 
 # Projects
-Project section
+[Project 1: Olympics HDI Study](https://github.com/kpaters4/Olympic-Medals-and-HDI/blob/main/notebooks/eda.ipynb)
 
 # Blog
 
