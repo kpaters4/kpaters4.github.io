@@ -43,6 +43,8 @@ The two ideas are very similar and closely connected, mostly differing in their 
 The social determinants are easier to measure than the capabilities, simply look at basic things like education level, income, neighborhood pollution, etc. The capabilities are a little more difficult, but it can still be measured by looking at how people are using the options around them. Are people choosing to participate in community events? Are they able to pursue education and rise in economic class? Looking at both frameworks together gives a better idea of how to measure quality of life. 
 
 ## Predicting Horse Colic with Wearable Data
+[Project 2: Predicting Horse Colic](https://github.com/kpaters4/Horse-Colic-Prediction)
+
 04-06-26
 
 ### The Problem
