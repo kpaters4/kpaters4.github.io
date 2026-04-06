@@ -5,6 +5,7 @@ I'm a Data Science student at UNC Charlotte with a strong interest in artificial
 
 # Projects
 [Project 1: Olympics HDI Study](https://github.com/kpaters4/Olympic-Medals-and-HDI/blob/main/notebooks/eda.ipynb)
+
 [Project 2: Predicting Horse Colic](https://github.com/kpaters4/Horse-Colic-Prediction)
 
 # Blog
