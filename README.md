@@ -8,6 +8,8 @@ I'm a Data Science student at UNC Charlotte with a strong interest in artificial
 
 [Project 2: Predicting Horse Colic](https://github.com/kpaters4/Horse-Colic-Prediction)
 
+[Final Project: Water Safety Research](https://github.com/kpaters4/water-safety-research)
+
 # Blog
 
 ## Social and Interdisciplinary Context in Data Science
@@ -105,3 +107,54 @@ If too much trust is placed in wearable devices false negatives are highly dange
 ### AI Transparency
 
 ChatGPT was used to assist with debugging and explanation of machine learning concepts. All final decisions, analysis, and interpretations were completed by me.
+
+## Predicting Water System Violations
+[Final Project: Water Safety Research](https://github.com/kpaters4/water-safety-research)
+
+### Problem Definition
+
+Water is essential for all life, but not all water is clean. A 2026 report by the Environmental Working Group found that almost 1 in 5 Americans drink water containing nitrates linked to cancer and birth defects (Schechinger, 2026). The concern is real, and it hits hardest in low-income and rural communities that often lack the resources to monitor and maintain their water systems.  
+On a grander scale are water system violations. Huge supplies of water that exceed contamination limits, people failing to report test results, and pipe bursts or failures. There are many reasons why this can happen, and it can easily result in ongoing public health issues, especially in communities already stretched thin. We wanted to know: can machine learning identify which counties are most at risk for water violations before those violations happen?
+
+### The Data
+
+We used data from the EPA's Safe Drinking Water Information System (SDWIS), which covers around 160,000 public water systems across the U.S. (EPA, 2017). The data included nitrate violation records, population served per county, and groundwater and surface water contamination rates collected between 1994 and 2016\.
+
+### What We Found
+
+Our model was able to correctly identify high-risk counties about 83% of the time. More importantly, it caught roughly 70% of truly high-risk counties. This means it would flag most of the places that actually need attention before a violation occurs.     
+![nitrate risk map](pr3map.png)
+
+When we mapped the results, high-risk counties clustered heavily in the Midwest and Northeast. The map above shows predicted high-risk counties in dark red, with clear concentrations across the agricultural Midwest. One likely explanation for this geographic pattern is agricultural runoff. Fertilizers contain high concentrations of nitrogen that crops don't fully absorb, and that excess nitrogen drains into groundwater and surface water supplies. This issue is worsened by federal agricultural policies that subsidize the production of crops requiring high amounts of fertilizer.
+
+![k-means map](map2.png)
+Our K-Means clustering revealed four distinct types of counties, shown in the map above. The most alarming group was small, rural counties with the highest per-capita violation rates, which are communities with the fewest resources and the worst water quality outcomes.
+
+### Why It Matters
+
+The communities hit hardest by water violations are often the least equipped to fight back. Small rural counties in our highest-risk cluster had disproportionately high violation rates despite serving far fewer people. When systems fail in these places, there are fewer resources, less media attention, and slower government response. This reflects a broader pattern of environmental injustice, where communities with the least political and economic power are most exposed to public health risks.
+
+There is also a significant data problem. Because the SDWIS only contains self-reported state data, roughly two-thirds of U.S. counties could not be mapped at all (EPA, 2017). The counties missing from our results are likely the smaller, less regulated systems that need the most oversight, which means our findings may actually underestimate the true scale of the problem.
+
+Machine learning won't fix water infrastructure, but tools like this could help direct limited inspection and funding resources toward the places most likely to need them before a violation becomes a public health crisis.
+
+### Broader Impact
+
+The benefits of a model like this are clear: earlier identification of at-risk systems means faster intervention and potentially fewer people exposed to contaminated water. However, the potential harms are also important to consider. A tool like this could be misused to avoid investing in communities by labeling them as perpetually high-risk instead of prioritizing them for support. In addition, because our data underrepresents rural and lower-income counties, the model may systematically miss the most vulnerable places. These are exactly the communities this kind of work is meant to protect.
+
+### References
+
+Safe Drinking Water Information System (SDWIS) Federal Reports Advanced  Search Tool.    
+	(2017, June 30). Data.gov; U.S. EPA Office of Research and Development (ORD).    
+	https://catalog.data.gov/dataset/safe-drinking-water-information-system-sdwis   
+	\-federal-reports-advanced-search-tool 
+
+   
+Ground Water and Drinking Water | US EPA. (2013, February 20). US EPA.    
+	https://www.epa.gov/ground-water-and-drinking-water/ 
+
+   
+Schechinger, Anne. “Drinking Water of Almost 1 in 5 Americans Contains Nitrates Linked    
+	to Cancer and Birth Defects.” Environmental Working Group, 23 Apr. 2026,    
+	www.ewg.org/research/drinking-water-almost-1-5-americans-contains-nitrates   
+	\-linked-cancer-and-birth-defects
