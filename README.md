@@ -113,12 +113,13 @@ ChatGPT was used to assist with debugging and explanation of machine learning co
 
 ### Problem Definition
 
-Water is essential for all life, but not all water is clean. A 2026 report by the Environmental Working Group found that almost 1 in 5 Americans drink water containing nitrates linked to cancer and birth defects (Schechinger, 2026). The concern is real, and it hits hardest in low-income and rural communities that often lack the resources to monitor and maintain their water systems.  
+Water is essential for all life, but not all water is clean. A 2026 report by the Environmental Working Group found that almost 1 in 5 Americans drink water containing nitrates linked to cancer and birth defects (Schechinger, 2026). The concern is real, and it hits hardest in low-income and rural communities that often lack the resources to monitor and maintain their water systems.
+
 On a grander scale are water system violations. Huge supplies of water that exceed contamination limits, people failing to report test results, and pipe bursts or failures. There are many reasons why this can happen, and it can easily result in ongoing public health issues, especially in communities already stretched thin. We wanted to know: can machine learning identify which counties are most at risk for water violations before those violations happen?
 
 ### The Data
 
-We used data from the EPA's Safe Drinking Water Information System (SDWIS), which covers around 160,000 public water systems across the U.S. (EPA, 2017). The data included nitrate violation records, population served per county, and groundwater and surface water contamination rates collected between 1994 and 2016\.
+We used data from the EPA's Safe Drinking Water Information System (SDWIS), which covers around 160,000 public water systems across the U.S. (EPA, 2017). The data included nitrate violation records, population served per county, and groundwater and surface water contamination rates collected between 1994 and 2016.
 
 ### What We Found
 
@@ -158,3 +159,7 @@ Schechinger, Anne. “Drinking Water of Almost 1 in 5 Americans Contains Nitrate
 	to Cancer and Birth Defects.” Environmental Working Group, 23 Apr. 2026,    
 	www.ewg.org/research/drinking-water-almost-1-5-americans-contains-nitrates   
 	\-linked-cancer-and-birth-defects
+
+### AI Transparency 
+
+Claude was used to assist with proofreading, markdown formatting, and explanation of machine learning concepts.
